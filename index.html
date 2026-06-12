@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish's AI Lab | Advanced Spam Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; overflow-x: hidden; }
+        h1, h2, h3, .brand { font-family: 'Space Grotesk', sans-serif; }
+        #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.5; pointer-events: none; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.15); }
+        .tilt-card { transform-style: preserve-3d; transform: perspective(1000px); transition: transform 0.1s ease-out; }
+        .tilt-content { transform: translateZ(30px); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        .loader { border: 3px solid rgba(255,255,255,0.1); border-left-color: #ffffff; border-radius: 50%; width: 20px; height: 20px; animation: spin 0.8s linear infinite; display: none; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="brand text-2xl font-bold tracking-tighter flex items-center">
+                <i class="fa-solid fa-atom text-blue-500 mr-2 animate-pulse"></i>
+                Krish's <span class="text-gradient ml-2">AI Lab</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                <!-- Live Backend Status Indicator -->
+                <div class="flex items-center px-3 py-1 rounded-full glass border border-white/5">
+                    <div id="statusDot" class="w-2 h-2 rounded-full bg-yellow-500 mr-2 animate-pulse"></div>
+                    <span id="statusText" class="text-xs font-medium text-yellow-400">Connecting...</span>
+                </div>
+                <a href="#spam-detector" class="hover:text-white transition-colors">Spam Detector</a>
+                <a href="#ipl-predictor" class="hover:text-white transition-colors opacity-50 cursor-not-allowed">IPL Predictor</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
+        <div class="text-center max-w-4xl mx-auto hero-content">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full glass text-blue-400 text-xs font-semibold mb-8 border border-blue-500/20 tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span> Next-Gen Machine Learning
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                Building the Future with <br> <span class="text-gradient">Intelligent Systems</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Welcome to my portfolio of advanced AI models. From natural language processing to predictive sports analytics.
+            </p>
+            <a href="#spam-detector" class="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-blue-600/25">
+                Try Live Demo <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Container -->
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Project 1: Advanced Spam Detector -->
+        <section id="spam-detector" class="scroll-section">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 reveal-left">
+                    <div class="flex items-center space-x-3 text-blue-400">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        <span class="font-bold tracking-widest uppercase text-sm">Project 01</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight">Advanced <span class="text-gradient">Spam Detector</span></h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        A state-of-the-art NLP model designed to classify text as Spam or Ham with high accuracy. It leverages advanced tokenization and machine learning algorithms.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-1.5 rounded-full glass text-xs font-medium text-gray-300 border border-white/5">Python</span>
+                        <span class="px-4 py-1.5 rounded-full glass text-xs font-medium text-gray-300 border border-white/5">NLP</span>
+                        <span class="px-4 py-1.5 rounded-full glass text-xs font-medium text-gray-300 border border-white/5">Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <div class="tilt-card glass rounded-3xl p-8 reveal-right relative overflow-hidden group glass-hover">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all duration-700 group-hover:bg-blue-500/20"></div>
+                    <div class="tilt-content space-y-6 relative z-10">
+                        <h3 class="text-xl font-bold flex items-center text-white">
+                            <i class="fa-solid fa-wand-magic-sparkles text-blue-400 mr-3"></i> Live Demo
+                        </h3>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Enter text to analyze:</label>
+                            <textarea id="spamInput" rows="4" class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-white placeholder-gray-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none" placeholder="e.g., Congratulations! You've won a $1000 gift card. Click here..."></textarea>
+                        </div>
+
+                        <button id="analyzeBtn" class="w-full py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-xl transition-all flex items-center justify-center space-x-2 shadow-lg shadow-blue-900/20">
+                            <span id="btnText">Analyze Text</span>
+                            <div class="loader" id="loader"></div>
+                        </button>
+
+                        <!-- Result Display -->
+                        <div id="resultBox" class="hidden mt-4 p-5 rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm font-medium text-gray-400">Prediction:</span>
+                                <span id="predictionLabel" class="font-bold text-lg flex items-center"></span>
+                            </div>
+                            <div class="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
+                                <div id="confidenceBar" class="h-2 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2 text-right">Model Confidence: <span id="confidenceText" class="text-gray-300 font-mono">0%</span></p>
+                        </div>
+
+                        <!-- Error Display -->
+                        <div id="errorBox" class="hidden mt-4 p-4 rounded-xl border border-red-500/20 bg-red-500/5 text-red-400 text-sm flex items-start">
+                            <i class="fa-solid fa-circle-exclamation mt-0.5 mr-2"></i>
+                            <span id="errorText">Backend connection failed. Please ensure your Python server is running.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: IPL Predictor (Placeholder) -->
+        <section id="ipl-predictor" class="scroll-section">
+            <div class="glass rounded-3xl p-12 text-center border-dashed border-2 border-white/10 reveal-up opacity-60">
+                <i class="fa-solid fa-trophy text-5xl text-yellow-500 mb-6"></i>
+                <h2 class="text-3xl font-bold mb-4">IPL Winner Predictor</h2>
+                <p class="text-gray-400 max-w-lg mx-auto mb-6">Historical match data, player stats, and pitch condition analytics.</p>
+                <span class="inline-block px-4 py-2 rounded-full bg-yellow-500/10 text-yellow-400 text-sm font-bold border border-yellow-500/20">🚧 Under Development</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/5 py-12 mt-20 bg-black/20">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            &copy; 2026 Krish's AI Lab. Built with <i class="fa-solid fa-heart text-red-500 mx-1"></i> and Code.
+        </div>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // ==========================================
+        // 1. THREE.JS BACKGROUND (Optimized)
+        // ==========================================
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas'), alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        const geometry = new THREE.IcosahedronGeometry(12, 2);
+        const material = new THREE.MeshBasicMaterial({ color: 0x3b82f6, wireframe: true, transparent: true, opacity: 0.12 });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        const particlesGeometry = new THREE.BufferGeometry();
+        const posArray = new Float32Array(800 * 3);
+        for(let i = 0; i < 800 * 3; i++) posArray[i] = (Math.random() - 0.5) * 60;
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        const particlesMaterial = new THREE.PointsMaterial({ size: 0.08, color: 0x8b5cf6, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending });
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+        camera.position.z = 18;
+
+        let mouseX = 0, mouseY = 0;
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX / window.innerWidth) - 0.5;
+            mouseY = (e.clientY / window.innerHeight) - 0.5;
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.y += 0.0015;
+            sphere.rotation.x += 0.0005;
+            particlesMesh.rotation.x += (mouseY - particlesMesh.rotation.x) * 0.05;
+            particlesMesh.rotation.y += (mouseX - particlesMesh.rotation.y) * 0.05;
+            renderer.render(scene, camera);
+        }
+        animate();
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // ==========================================
+        // 2. GSAP SCROLL ANIMATIONS
+        // ==========================================
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".hero-content > *", { y: 40, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out", delay: 0.2 });
+        gsap.utils.toArray('.reveal-left').forEach(el => gsap.from(el, { scrollTrigger: { trigger: el, start: "top 85%" }, x: -60, opacity: 0, duration: 1, ease: "power3.out" }));
+        gsap.utils.toArray('.reveal-right').forEach(el => gsap.from(el, { scrollTrigger: { trigger: el, start: "top 85%" }, x: 60, opacity: 0, duration: 1, ease: "power3.out" }));
+        gsap.utils.toArray('.reveal-up').forEach(el => gsap.from(el, { scrollTrigger: { trigger: el, start: "top 85%" }, y: 60, opacity: 0, duration: 1, ease: "power3.out" }));
+
+        // ==========================================
+        // 3. 3D TILT EFFECT
+        // ==========================================
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left, y = e.clientY - rect.top;
+                const rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -8;
+                const rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 8;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+
+        // ==========================================
+        // 4. BACKEND STATUS CHECK & PREDICTION
+        // ==========================================
+        const API_URL = 'http://localhost:5000/predict';
+
+        // Check if server is running on page load
+        async function checkBackendStatus() {
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            try {
+                const response = await fetch('http://localhost:5000/health');
+                const data = await response.json();
+                if (data.status === 'ok') {
+                    statusDot.className = "w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse";
+                    statusText.textContent = "Backend Connected";
+                    statusText.className = "text-xs font-medium text-green-400";
+                } else { throw new Error("Server error"); }
+            } catch (e) {
+                statusDot.className = "w-2 h-2 rounded-full bg-red-500 mr-2";
+                statusText.textContent = "Backend Offline (Run server.py)";
+                statusText.className = "text-xs font-medium text-red-400";
+            }
+        }
+        window.addEventListener('load', checkBackendStatus);
+
+        // Analyze Button Logic
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const spamInput = document.getElementById('spamInput');
+        const loader = document.getElementById('loader');
+        const btnText = document.getElementById('btnText');
+        const resultBox = document.getElementById('resultBox');
+        const errorBox = document.getElementById('errorBox');
+        const predictionLabel = document.getElementById('predictionLabel');
+        const confidenceBar = document.getElementById('confidenceBar');
+        const confidenceText = document.getElementById('confidenceText');
+
+        analyzeBtn.addEventListener('click', async () => {
+            const text = spamInput.value.trim();
+            if (!text) {
+                spamInput.focus();
+                spamInput.classList.add('ring-2', 'ring-red-500/50');
+                setTimeout(() => spamInput.classList.remove('ring-2', 'ring-red-500/50'), 1000);
+                return;
+            }
+
+            analyzeBtn.disabled = true;
+            btnText.textContent = "Analyzing...";
+            loader.style.display = "block";
+            resultBox.classList.add('hidden');
+            errorBox.classList.add('hidden');
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: text })
+                });
+
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const result = await response.json();
+
+                resultBox.classList.remove('hidden');
+                const isSpam = result.prediction.toLowerCase() === 'spam';
+                const confidence = result.confidence;
+
+                if (isSpam) {
+                    predictionLabel.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-2"></i> SPAM';
+                    predictionLabel.className = "font-bold text-lg text-red-400 flex items-center";
+                    confidenceBar.className = "h-2 rounded-full bg-gradient-to-r from-red-600 to-red-400 transition-all duration-1000 ease-out";
+                } else {
+                    predictionLabel.innerHTML = '<i class="fa-solid fa-check-circle mr-2"></i> HAM (Safe)';
+                    predictionLabel.className = "font-bold text-lg text-green-400 flex items-center";
+                    confidenceBar.className = "h-2 rounded-full bg-gradient-to-r from-green-600 to-green-400 transition-all duration-1000 ease-out";
+                }
+
+                setTimeout(() => {
+                    confidenceBar.style.width = `${(confidence * 100)}%`;
+                    confidenceText.textContent = `${(confidence * 100).toFixed(1)}%`;
+                }, 100);
+
+            } catch (error) {
+                console.error("Backend Error:", error);
+                errorBox.classList.remove('hidden');
+                document.getElementById('statusDot').className = "w-2 h-2 rounded-full bg-red-500 mr-2";
+                document.getElementById('statusText').textContent = "Connection Lost";
+                document.getElementById('statusText').className = "text-xs font-medium text-red-400";
+            } finally {
+                analyzeBtn.disabled = false;
+                btnText.textContent = "Analyze Text";
+                loader.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

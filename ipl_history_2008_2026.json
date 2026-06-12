@@ -1,0 +1,211 @@
+[
+    {
+        "Season": 2008,
+        "Winner": "Rajasthan Royals",
+        "Winner_Captain": "Shane Warne",
+        "Runner_Up": "Chennai Super Kings",
+        "Runner_Up_Captain": "MS Dhoni",
+        "Final_Venue": "DY Patil Stadium, Mumbai",
+        "Orange_Cap": "Shaun Marsh (KXIP)",
+        "Purple_Cap": "Sohail Tanvir (RR)",
+        "Man_of_the_Tournament": "Shane Watson (RR)"
+    },
+    {
+        "Season": 2009,
+        "Winner": "Deccan Chargers",
+        "Winner_Captain": "Adam Gilchrist",
+        "Runner_Up": "Royal Challengers Bengaluru",
+        "Runner_Up_Captain": "Anil Kumble",
+        "Final_Venue": "Wanderers Stadium, Johannesburg",
+        "Orange_Cap": "Matthew Hayden (CSK)",
+        "Purple_Cap": "RP Singh (DC)",
+        "Man_of_the_Tournament": "Adam Gilchrist (DC)"
+    },
+    {
+        "Season": 2010,
+        "Winner": "Chennai Super Kings",
+        "Winner_Captain": "MS Dhoni",
+        "Runner_Up": "Mumbai Indians",
+        "Runner_Up_Captain": "Sachin Tendulkar",
+        "Final_Venue": "DY Patil Stadium, Mumbai",
+        "Orange_Cap": "Sachin Tendulkar (MI)",
+        "Purple_Cap": "Pragyan Ojha (DC)",
+        "Man_of_the_Tournament": "Sachin Tendulkar (MI)"
+    },
+    {
+        "Season": 2011,
+        "Winner": "Chennai Super Kings",
+        "Winner_Captain": "MS Dhoni",
+        "Runner_Up": "Royal Challengers Bengaluru",
+        "Runner_Up_Captain": "Daniel Vettori",
+        "Final_Venue": "M. A. Chidambaram Stadium, Chennai",
+        "Orange_Cap": "Chris Gayle (RCB)",
+        "Purple_Cap": "Lasith Malinga (MI)",
+        "Man_of_the_Tournament": "Chris Gayle (RCB)"
+    },
+    {
+        "Season": 2012,
+        "Winner": "Kolkata Knight Riders",
+        "Winner_Captain": "Gautam Gambhir",
+        "Runner_Up": "Chennai Super Kings",
+        "Runner_Up_Captain": "MS Dhoni",
+        "Final_Venue": "M. A. Chidambaram Stadium, Chennai",
+        "Orange_Cap": "Chris Gayle (RCB)",
+        "Purple_Cap": "Morne Morkel (DD)",
+        "Man_of_the_Tournament": "Sunil Narine (KKR)"
+    },
+    {
+        "Season": 2013,
+        "Winner": "Mumbai Indians",
+        "Winner_Captain": "Rohit Sharma",
+        "Runner_Up": "Chennai Super Kings",
+        "Runner_Up_Captain": "MS Dhoni",
+        "Final_Venue": "Eden Gardens, Kolkata",
+        "Orange_Cap": "Michael Hussey (CSK)",
+        "Purple_Cap": "Dwayne Bravo (CSK)",
+        "Man_of_the_Tournament": "Shane Watson (RR)"
+    },
+    {
+        "Season": 2014,
+        "Winner": "Kolkata Knight Riders",
+        "Winner_Captain": "Gautam Gambhir",
+        "Runner_Up": "Kings XI Punjab",
+        "Runner_Up_Captain": "George Bailey",
+        "Final_Venue": "M. Chinnaswamy Stadium, Bengaluru",
+        "Orange_Cap": "Robin Uthappa (KKR)",
+        "Purple_Cap": "Mohit Sharma (CSK)",
+        "Man_of_the_Tournament": "Glenn Maxwell (KXIP)"
+    },
+    {
+        "Season": 2015,
+        "Winner": "Mumbai Indians",
+        "Winner_Captain": "Rohit Sharma",
+        "Runner_Up": "Chennai Super Kings",
+        "Runner_Up_Captain": "MS Dhoni",
+        "Final_Venue": "Eden Gardens, Kolkata",
+        "Orange_Cap": "David Warner (SRH)",
+        "Purple_Cap": "Dwayne Bravo (CSK)",
+        "Man_of_the_Tournament": "Andre Russell (KKR)"
+    },
+    {
+        "Season": 2016,
+        "Winner": "Sunrisers Hyderabad",
+        "Winner_Captain": "David Warner",
+        "Runner_Up": "Royal Challengers Bengaluru",
+        "Runner_Up_Captain": "Virat Kohli",
+        "Final_Venue": "M. Chinnaswamy Stadium, Bengaluru",
+        "Orange_Cap": "Virat Kohli (RCB)",
+        "Purple_Cap": "Bhuvneshwar Kumar (SRH)",
+        "Man_of_the_Tournament": "Virat Kohli (RCB)"
+    },
+    {
+        "Season": 2017,
+        "Winner": "Mumbai Indians",
+        "Winner_Captain": "Rohit Sharma",
+        "Runner_Up": "Rising Pune Supergiant",
+        "Runner_Up_Captain": "Steve Smith",
+        "Final_Venue": "Rajiv Gandhi International Stadium, Hyderabad",
+        "Orange_Cap": "David Warner (SRH)",
+        "Purple_Cap": "Bhuvneshwar Kumar (SRH)",
+        "Man_of_the_Tournament": "Ben Stokes (RPS)"
+    },
+    {
+        "Season": 2018,
+        "Winner": "Chennai Super Kings",
+        "Winner_Captain": "MS Dhoni",
+        "Runner_Up": "Sunrisers Hyderabad",
+        "Runner_Up_Captain": "Kane Williamson",
+        "Final_Venue": "Wankhede Stadium, Mumbai",
+        "Orange_Cap": "Kane Williamson (SRH)",
+        "Purple_Cap": "Andrew Tye (KXIP)",
+        "Man_of_the_Tournament": "Sunil Narine (KKR)"
+    },
+    {
+        "Season": 2019,
+        "Winner": "Mumbai Indians",
+        "Winner_Captain": "Rohit Sharma",
+        "Runner_Up": "Chennai Super Kings",
+        "Runner_Up_Captain": "MS Dhoni",
+        "Final_Venue": "Rajiv Gandhi International Stadium, Hyderabad",
+        "Orange_Cap": "David Warner (SRH)",
+        "Purple_Cap": "Imran Tahir (CSK)",
+        "Man_of_the_Tournament": "Andre Russell (KKR)"
+    },
+    {
+        "Season": 2020,
+        "Winner": "Mumbai Indians",
+        "Winner_Captain": "Rohit Sharma",
+        "Runner_Up": "Delhi Capitals",
+        "Runner_Up_Captain": "Shreyas Iyer",
+        "Final_Venue": "Dubai International Cricket Stadium, Dubai",
+        "Orange_Cap": "KL Rahul (KXIP)",
+        "Purple_Cap": "Kagiso Rabada (DC)",
+        "Man_of_the_Tournament": "Jofra Archer (RR)"
+    },
+    {
+        "Season": 2021,
+        "Winner": "Chennai Super Kings",
+        "Winner_Captain": "MS Dhoni",
+        "Runner_Up": "Kolkata Knight Riders",
+        "Runner_Up_Captain": "Eoin Morgan",
+        "Final_Venue": "Dubai International Cricket Stadium, Dubai",
+        "Orange_Cap": "Ruturaj Gaikwad (CSK)",
+        "Purple_Cap": "Harshal Patel (RCB)",
+        "Man_of_the_Tournament": "Harshal Patel (RCB)"
+    },
+    {
+        "Season": 2022,
+        "Winner": "Gujarat Titans",
+        "Winner_Captain": "Hardik Pandya",
+        "Runner_Up": "Rajasthan Royals",
+        "Runner_Up_Captain": "Sanju Samson",
+        "Final_Venue": "Narendra Modi Stadium, Ahmedabad",
+        "Orange_Cap": "Jos Buttler (RR)",
+        "Purple_Cap": "Yuzvendra Chahal (RR)",
+        "Man_of_the_Tournament": "Jos Buttler (RR)"
+    },
+    {
+        "Season": 2023,
+        "Winner": "Chennai Super Kings",
+        "Winner_Captain": "MS Dhoni",
+        "Runner_Up": "Gujarat Titans",
+        "Runner_Up_Captain": "Hardik Pandya",
+        "Final_Venue": "Narendra Modi Stadium, Ahmedabad",
+        "Orange_Cap": "Shubman Gill (GT)",
+        "Purple_Cap": "Mohammed Shami (GT)",
+        "Man_of_the_Tournament": "Shubman Gill (GT)"
+    },
+    {
+        "Season": 2024,
+        "Winner": "Kolkata Knight Riders",
+        "Winner_Captain": "Shreyas Iyer",
+        "Runner_Up": "Sunrisers Hyderabad",
+        "Runner_Up_Captain": "Pat Cummins",
+        "Final_Venue": "M. A. Chidambaram Stadium, Chennai",
+        "Orange_Cap": "Virat Kohli (RCB)",
+        "Purple_Cap": "Harshal Patel (PBKS)",
+        "Man_of_the_Tournament": "Sunil Narine (KKR)"
+    },
+    {
+        "Season": 2025,
+        "Winner": "Royal Challengers Bengaluru",
+        "Winner_Captain": "Rajat Patidar",
+        "Runner_Up": "Punjab Kings",
+        "Runner_Up_Captain": "Shikar Dhawan",
+        "Final_Venue": "Narendra Modi Stadium, Ahmedabad",
+        "Orange_Cap": "Abhishek Sharma (SRH)",
+        "Purple_Cap": "Prasidh Krishna (GT)",
+        "Man_of_the_Tournament": "Virat Kohli (RCB)"
+    },
+    {
+        "Season": 2026,
+        "Winner": "Royal Challengers Bengaluru",
+        "Winner_Captain": "Rajat Patidar",
+        "Runner_Up": "Gujarat Titans",
+        "Runner_Up_Captain": "Shubman Gill",
+        "Final_Venue": "Narendra Modi Stadium, Ahmedabad",
+        "Orange_Cap": "Vaibhav Sooryavanshi (RR)",
+        "Purple_Cap": "Kagiso Rabada (GT)",
+        "Man_of_the_Tournament": "Virat Kohli (RCB)"
+    }
+]
